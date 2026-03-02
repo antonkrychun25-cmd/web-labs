@@ -2,65 +2,45 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>ПІБ Студента - Front-end Labs</title>
+    <title>Лабораторна робота №1 - CSS</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; background-color: #f4f7f6; color: #333; }
-        .main-container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .header { border-bottom: 2px solid #007bff; margin-bottom: 25px; padding-bottom: 15px; }
-        h3 { margin: 0; color: #222; }
-        h4 { color: #555; margin-top: 10px; text-transform: uppercase; font-size: 14px; }
-        
-        .lab-section { margin-top: 30px; border: 1px solid #e1e4e8; border-radius: 10px; padding: 20px; background: #fafafa; }
-        .lab-title { font-size: 20px; font-weight: bold; color: #007bff; text-decoration: none; display: block; margin-bottom: 15px; }
-        .lab-title:hover { text-decoration: underline; }
-
-        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
-        .links-grid a { 
-            display: block; 
-            padding: 8px 12px; 
-            background: white; 
-            border: 1px solid #ddd; 
-            border-radius: 6px; 
-            text-decoration: none; 
-            color: #444; 
-            font-size: 14px; 
-            transition: 0.2s;
-        }
-        .links-grid a:hover { border-color: #007bff; background: #eef6ff; color: #007bff; }
-        .special-link { grid-column: 1 / -1; background: #eefbff !important; font-weight: bold; border-color: #007bff !important; }
-        
-        .back-link { display: block; margin-top: 30px; text-align: center; color: #888; text-decoration: none; font-size: 13px; }
+        body { font-family: sans-serif; padding: 30px; line-height: 1.6; background: #f4f7f6; }
+        .box { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 700px; margin: 0 auto; }
+        h2 { color: #007aff; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        ul { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        li { background: #fff; border: 1px solid #ddd; border-radius: 5px; }
+        a { text-decoration: none; color: #333; display: block; padding: 10px; font-size: 14px; }
+        a:hover { background: #eef6ff; color: #007aff; }
+        .main-link { grid-column: 1 / -1; background: #007aff !important; }
+        .main-link a { color: white !important; text-align: center; font-weight: bold; }
+        .nav-top { text-align: right; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <div class="main-container">
-        <div class="header">
-            <h3>Кричун Антон Дмитрович <br> Варіант № 15</h3>
-            <h4>Дисципліна: Front-end-розробка</h4>
-        </div>
-
-        <div class="lab-section">
-            <a href="lab1/index.html" class="lab-title">Лабораторна робота №1: Основи CSS</a>
-            
-            <div class="links-grid">
-                <a href="lab1/html/selectors.html" class="special-link">🎯 Практичне: 8 різновидів селекторів</a>
-                
-                <a href="lab1/html/example1.html">Приклад 1: Internal</a>
-                <a href="html/example2.html">Приклад 2: Inline</a>
-                <a href="lab1/html/example3.html">Приклад 3: ID</a>
-                <a href="lab1/html/example4.html">Приклад 4: Class</a>
-                <a href="lab1/html/example5.html">Приклад 5: Group</a>
-                <a href="lab1/html/example6.html">Приклад 6: Image</a>
-                <a href="lab1/html/example7.html">Приклад 7: BG Color</a>
-                <a href="lab1/html/example8.html">Приклад 8: Lists</a>
-                <a href="lab1/html/example9.html">Приклад 9: Box Model</a>
-                <a href="lab1/html/example10.html">Приклад 10: Descendants</a>
-            </div>
-        </div>
-
-        <a href="../index.html" class="back-link">← Назад до головного меню репозиторію</a>
+<div class="box">
+    <div class="nav-top">
+        <a href="../index.html" style="display:inline; color:#888;">← Назад до дисципліни</a>
     </div>
+
+    <h2>Лабораторна робота №1</h2>
+    <p>Виконав: <b>Кричун Антон Дмитрович</b> | Варіант №15</p>
+
+    <ul>
+        <li class="main-link"><a href="html/selectors.html">🎯 ПРАКТИЧНЕ: 8 СЕЛЕКТОРІВ</a></li>
+        
+        <li><a href="html/example1.html">Приклад 1: Internal</a></li>
+        <li><a href="html/example2.html">Приклад 2: Inline</a></li>
+        <li><a href="html/example3.html">Приклад 3: ID Selector</a></li>
+        <li><a href="html/example4.html">Приклад 4: Class Selector</a></li>
+        <li><a href="html/example5.html">Приклад 5: Grouping</a></li>
+        <li><a href="html/example6.html">Приклад 6: Image</a></li>
+        <li><a href="html/example7.html">Приклад 7: BG Color</a></li>
+        <li><a href="html/example8.html">Приклад 8: Lists</a></li>
+        <li><a href="html/example9.html">Приклад 9: Box Model</a></li>
+        <li><a href="html/example10.html">Приклад 10: Descendants</a></li>
+    </ul>
+</div>
 
 </body>
 </html>
