@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2 - Побудова таблиць</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">← Назад до змісту лаби</a> | 
+        <a href="../../index.html"> На головну </a>
+    </nav>
+    <hr>
+    <h1 align="center">Побудова таблиць.</h1>
+
+    <h3>Таблиця 1.</h3>
+    <table class="t1">
+        <tr><td>Data1</td><td>Data2</td><td>Data3</td></tr>
+        <tr class="t1-row2"><td>Data4</td><td>Data5</td><td>Data6</td></tr>
+    </table>
+
+    <h3>Таблиця 2.</h3>
+    <table class="t2" border="1">
+        <tr><td>Data1</td><td>Data2</td><td>Data3</td></tr>
+        <tr><td>Data4</td><td>Data5</td><td>Data6</td></tr>
+        <tr><td>Data7</td><td>Data8</td><td>Data9</td></tr>
+    </table>
+
+    <h3>Таблиця 3.</h3>
+    <table class="t3" cellspacing="20">
+        <tr><td>Data1</td><td>Data2</td><td>Data3</td></tr>
+        <tr><td>Data4</td><td>Data5</td><td>Data6</td></tr>
+    </table>
+
+    <h3>Таблиця 4.</h3>
+    <table class="t4" cellspacing="30">
+        <tr><td>Data1</td><td>Data2</td><td>Data3</td></tr>
+        <tr><td>Data4</td><td>Data5</td><td>Data6</td></tr>
+    </table>
+
+    <h3>Таблиця 5.</h3>
+    <table class="t5" cellspacing="0" cellpadding="15">
+        <tr><td class="b-none">1</td><td class="b-none align-c">2</td><td class="b-none align-r">3</td></tr>
+        <tr><td class="bg-gray">4</td><td colspan="2" class="bg-green align-c">5 &nbsp;&nbsp;&nbsp; 6</td></tr>
+        <tr class="bg-lime"><td class="align-l">7</td><td class="align-c">8</td><td class="align-r">9</td></tr>
+    </table>
+
+    <h3>Таблиця 6.</h3>
+    <table class="t6">
+        <tr>
+            <th rowspan="2">Стать</th>
+            <th colspan="2">Середнє значення</th>
+            <th rowspan="2">Вік</th>
+        </tr>
+        <tr>
+            <th>Ріст</th>
+            <th>Вага</th>
+        </tr>
+        <tr><td>чоловіки</td><td>174</td><td>78</td><td>30</td></tr>
+        <tr><td>жінки</td><td>165</td><td>56</td><td>25</td></tr>
+    </table>
+
+    <h3>Таблиця 7.</h3>
+    <table class="t7">
+        <tr><td class="bg-blue">Data</td><td colspan="2">Data</td><td>Data</td></tr>
+        <tr><td>Data</td><td>Data</td><td class="bg-pink">Data</td><td>Data</td></tr>
+        <tr><td></td><td></td><td colspan="2" class="bg-magenta"></td></tr>
+    </table>
+
+    <h3>Таблиця 8. Таблиця вкладена в таблицю.</h3>
+    <table class="t8" border="1">
+        <tr>
+            <td>Data</td>
+            <td rowspan="2">Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="t8-inner">
+                    <tr><td>Data1</td><td>Data2</td><td>Data3</td></tr>
+                    <tr><td>Data4</td><td>Data5</td><td>Data6</td></tr>
+                </table>
+                <p class="align-c">Таблиця 8.1.</p>
+            </td>
+            <td>
+                <table class="t8-inner">
+                    <tr><td>Data1</td><td>Data2</td><td>Data3</td></tr>
+                </table>
+                <p class="align-c">Таблиця 8.1.</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

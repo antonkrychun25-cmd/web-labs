@@ -1,0 +1,38 @@
+
+body { font-family: sans-serif; padding: 20px; }
+table { border-collapse: collapse; margin-bottom: 20px; }
+td, th { border: 1px solid black; padding: 5px; }
+.center { text-align: center; }
+.align-c { text-align: center; }
+.align-r { text-align: right; }
+.align-l { text-align: left; }
+
+/* Таблиця 1 */
+.t1 { width: 40%; height: 200px; border: 3px solid purple; }
+.t1 td { border: 1px solid purple; width: 33%; }
+.t1-row2 { height: 150px; }
+
+/* Таблиці 2, 3, 4 */
+.t2, .t3, .t4 { border-collapse: separate; width: 450px; border: 1px solid teal; }
+.t2 td, .t3 td, .t4 td { border: 1px solid teal; }
+
+/* Таблиця 5 */
+.t5 { width: 500px; border: 1px solid purple; border-collapse: collapse; }
+.t5 td { border: 1px solid purple; }
+.b-none { border-top: none !important; }
+.bg-gray { background: #e0e0e0; }
+.bg-green { background: #00ff00; }
+.bg-lime { background: #adff2f; }
+
+/* Таблиця 6 */
+.t6 { width: 250px; text-align: center; }
+
+/* Таблиця 7 */
+.t7 { width: 500px; }
+.bg-blue { background: #99ccff; }
+.bg-pink { background: #ff99cc; }
+.bg-magenta { background: #ff00ff; }
+
+/* Таблиця 8 */
+.t8-inner { border: 1px solid purple; color: purple; width: 100%; margin: 5px 0; }
+.t8-inner td { border: 1px solid purple; font-size: 0.8em; }
