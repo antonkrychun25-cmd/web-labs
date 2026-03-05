@@ -1,9 +1,11 @@
-/* Загальні стилі */
-body { font-family: 'Helvetica Neue', Arial, sans-serif; padding: 30px; line-height: 1.6; color: #333; }
-.nav-link-top { display: block; text-align: right; margin-bottom: 20px; text-decoration: none; color: #007aff; font-weight: 500; }
-.back-btn { display: inline-block; margin-top: 20px; color: #555; text-decoration: none; border: 1px solid #ccc; padding: 5px 10px; border-radius: 4px; }
-.back-btn:hover { background: #f0f0f0; }
-/* Стилі для прикладів 3-10 */
+
+body { font-family: sans-serif; padding: 20px; line-height: 1.2; color: #000; }
+.nav-link-top { display: block; text-align: right; margin-bottom: 10px; color: #000; text-decoration: none; }
+.example-btn { display: block; margin: 5px 0; color: blue; text-decoration: none; }
+.example-btn:hover { text-decoration: underline; }
+.practical-header { font-weight: bold; margin: 15px 0; border-bottom: 1px solid #000; }
+
+
 .ex3-id { color: navy; background: #f0f8ff; padding: 10px; }
 .ex4-class { font-weight: bold; border-bottom: 2px solid green; }
 .ex5-group { text-transform: uppercase; color: darkred; }
@@ -11,7 +13,8 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; padding: 30px; line-hei
 .ex8-list { list-style-type: square; color: darkgreen; }
 .ex9-box { margin: 20px; padding: 20px; border: 5px double black; }
 .ex10-desc b { color: blue; text-decoration: underline; }
-/* 8 Селекторів для selectors.html */
+
+
 #sel-id { color: navy; }
 .sel-class { background: #ccffcc; }
 p i { color: crimson; }
