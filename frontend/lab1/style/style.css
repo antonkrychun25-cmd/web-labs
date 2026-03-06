@@ -1,10 +1,4 @@
 
-body { font-family: sans-serif; padding: 20px; line-height: 1.2; color: #000; }
-.nav-link-top { display: block; text-align: right; margin-bottom: 10px; color: #000; text-decoration: none; }
-.example-btn { display: block; margin: 5px 0; color: blue; text-decoration: none; }
-.example-btn:hover { text-decoration: underline; }
-.practical-header { font-weight: bold; margin: 15px 0; border-bottom: 1px solid #000; }
-
 
 .ex3-id { color: navy; background: #f0f8ff; padding: 10px; }
 .ex4-class { font-weight: bold; border-bottom: 2px solid green; }
