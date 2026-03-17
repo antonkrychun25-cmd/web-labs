@@ -1,0 +1,65 @@
+
+body {
+    background-color: white;
+    background-image: url('ramka.gif');
+    background-repeat: repeat-y;
+    background-position: left;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#left-col h4, #right-col h4 {
+    font-style: italic;
+}
+
+
+.col-container {
+    position: relative;
+    height: 600px;
+    margin-top: 100px; 
+}
+
+
+.column {
+    position: absolute;
+    border: 4px double red; 
+    padding: 10px; 
+    height: 120%;
+    overflow: auto; 
+    background-color: #f7e8d1; 
+}
+
+
+#left-col {
+    width: 600px;
+    left: 0;
+    background-image: url('bg_menu.gif');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#right-col {
+    width: 400px;
+    left: 620px; 
+    background-image: url('bg_menu.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
+p {
+    text-indent: 15px;
+    margin-bottom: 10px;
+}
