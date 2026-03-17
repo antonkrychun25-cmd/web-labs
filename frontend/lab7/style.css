@@ -6,22 +6,16 @@
 
 body {
     background-color: #f4f4f4;
-    padding: 40px;
-    font-family: Arial, sans-serif;
-}
-
-.home-link {
-    font-size: 12px;
-    color: blue;
-    text-decoration: none;
+    padding: 20px;
+    font-family: Arial;
 }
 
 .canvas {
     width: 1000px;
     margin: 0 auto;
-    background: white;
-    box-shadow: 15px 15px 0px #888;
     border: 2px solid black;
+    box-shadow: 10px 10px 0px #888;
+    background: white;
 }
 
 .border {
@@ -29,56 +23,31 @@ body {
     position: relative;
 }
 
-.num {
-    position: absolute;
-    font-weight: bold;
-    font-size: 22px;
-}
-
 .block-1, .block-6 {
     background-color: #ffcc44;
-    height: 110px;
-    padding: 15px;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
 }
 
-.block-1 .num { top: 20px; right: 30px; }
-.block-6 .num { bottom: 10px; left: 30px; }
-
-.logo-placeholder {
-    width: 100px;
-    height: 50px;
-    background: white;
-    border: 1px solid black;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.logo-placeholder img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-}
-
-.block-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 15px;
-    vertical-align: middle;
-}
 
 .middle-section {
+    width: 100%;
     height: 500px;
-    font-size: 0; 
+    font-size: 0;           
+    white-space: nowrap;    
+    overflow: hidden;
 }
 
 .middle-section > div {
     display: inline-block;
-    width: 25%;
+    width: 25%;             
     height: 100%;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 14px;       
     text-align: center;
     padding: 10px;
+    white-space: normal;    
 }
 
 .block-2 { background-color: #4466ff; color: white; }
@@ -88,25 +57,22 @@ body {
 
 img {
     width: 90%;
-    height: 140px;
+    height: 120px;
     object-fit: cover;
     border: 1px solid black;
     margin: 10px 0;
 }
 
 .scroll-box {
-    height: 420px;
+    height: 380px;
     overflow-y: scroll;
     text-align: left;
-    padding-right: 5px;
 }
 
 .rotate-content {
     transform: rotate(5deg);
 }
 
-footer p { 
-    text-align: center; 
-    margin-top: 35px; 
-    font-weight: bold; 
-}
+.num { position: absolute; font-weight: bold; right: 10px; bottom: 5px; }
+.logo-placeholder { width: 100px; height: 40px; background: white; border: 1px solid black; display: inline-block; }
+.block-title { font-size: 20px; font-weight: bold; margin-left: 10px; }
