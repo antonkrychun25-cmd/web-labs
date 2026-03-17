@@ -1,78 +1,18 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторна робота №4</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-       
-        .task-block { display: none; padding: 20px; border: 1px solid #ccc; background: #fff; margin-top: 20px;}
-        .task-block:target { display: block; }
-        
-        
-        h2.lab1 { font-size:16pt; color:#0033FF; font-family:Geneva, Arial; }
-        h2.curs { font-size:18pt; font-style:italic; font-family: "Courier New", Courier; color:#46dcf9; }
-        #bgmagenta { text-indent:20px; background-color:#1166FF; color:#FFFF00; }
-        #fishka { background-color:#CC99FF; color:#3300FF; font-size:20pt; }
-
-     
-        .zsuv-box { width: 300px; padding: 10px; margin-bottom: 10px; }
-        .p1 { margin-left: 0; background: #eee; border: 1px solid black; color: blue; }
-        .p2 { margin-left: 60pt; background: #ddd; border: 2px dashed red; color: green; }
-        .p3 { margin-left: 120pt; background: #ccc; border: 3px double blue; color: darkred; }
-    </style>
+    <title>Лабораторна 4 - Меню</title>
 </head>
 <body>
-
-    <a href="../../index.html"> На головну</a>
-    <hr>
-
-    <b>Навігація по роботі:</b><br>
-    <a href="#task1">Завдання 1</a> | 
-    <a href="#task2">Завдання 2</a> | 
-    <a href="#task3">Завдання 3</a> | 
-    <a href="#task4">Завдання 4</a>
-
-    <div id="task1" class="task-block">
-        <h3>Завдання 1: Селектори</h3>
-        <h2 class="lab1">Приємно на пари з ранку приходити</h2>
-        <h2 class="curs">Приємно бачити добрі очі екзаменатора</h2>
-        <h2 id="bgmagenta">Приємно зайти в деканат після сесії</h2>
-        <p id="bgmagenta">Приємно не мати "хвостів", бути успішним.</p>
-    </div>
-
-    <div id="task2" class="task-block">
-        <h3>Завдання 2: Зсув абзаців</h3>
-        <div class="zsuv-box p1">Перший абзац.</div>
-        <div class="zsuv-box p2">Другий абзац (зсув 60pt).</div>
-        <div class="zsuv-box p3">Третій абзац (зсув 120pt).</div>
-    </div>
-
-    <div id="task3" class="task-block">
-        <h3>Завдання 3: Position, Float, Z-index</h3>
-        <div style="position: relative; height: 100px; border: 1px solid;">
-            <div style="position: absolute; bottom: 0; right: 0; background: yellow;">Absolute (Bottom-Right)</div>
-            <div style="float: left; width: 40px; height: 40px; background: red;">Float</div>
-            <p>Текст, що обтікає елемент.</p>
-        </div>
-    </div>
-
-    <div id="task4" class="task-block">
-        <h3 style="text-align: center;">Програмування Internet</h3>
-        <div class="col-container">
-            <div id="left-col" class="column">
-                <h4>Історія виникнення Internet</h4>
-                <p>У середині 60-років у самий розпал холодної війни міністерство оборони США планувало створити мережу...</p>
-                <p>Для вирішення завдання було залучено агентство ARPA...</p>
-                <p>Вже на цьому рівні передбачалася динамічна маршрутизація пакетів...</p>
-            </div>
-            <div id="right-col" class="column">
-                <h4>Технологія конструювання ПЗ</h4>
-                <p>Технологія конструювання ПЗ – це система інженерних принципів для створення економного ПЗ...</p>
-                <p>Методи дозволяють відповісти на питання, як створити програмний виріб...</p>
-            </div>
-        </div>
-    </div>
-
+    <a href="../../index.html"> На головну сайту</a>
+    <h1>Лабораторна робота №4</h1>
+    
+    <ul>
+        <li><a href="task1.html">Завдання 1 (Селектори)</a></li>
+        <li><a href="task2.html">Завдання 2 (Зсув абзаців)</a></li>
+        <li><a href="task3.html">Завдання 3 (Position/Float)</a></li>
+        <li><a href="task4.html">Завдання 4 (Дві колонки)</a></li>
+    </ul>
 </body>
 </html>
