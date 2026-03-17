@@ -54,12 +54,10 @@ body {
 
 
 .scroll-box {
-    height: 300px;
-    overflow-y: auto;
+    height: 250px;       
+    overflow-y: scroll;  
     text-align: left;
-    background: #fff;
-    padding: 5px;
-    border: 1px inset #ccc;
+    padding: 10px;
 }
 
 
