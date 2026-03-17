@@ -1,0 +1,181 @@
+
+body {
+    background-color: #1a1a1a;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.home-btn {
+    color: #00ffff;
+    text-decoration: none;
+    float: left;
+    margin: 15px;
+    border: 1px solid #00ffff;
+    padding: 5px 10px;
+}
+
+
+h1 {
+    margin-top: 60px;
+    font-size: 36px;
+    text-shadow: 3px 3px 6px #ff0000;
+}
+
+
+.wiki-links {
+    background-color: #333;
+    padding: 12px;
+    margin-bottom: 25px;
+}
+.wiki-links a {
+    color: #ffff00;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+.center-pic {
+    width: 80%;
+    max-width: 550px;
+    border: 4px solid #fff; 
+    margin-bottom: 20px;
+}
+
+
+.text-block {
+    width: 85%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #222;
+    border: 20px solid;
+    
+    border-image-source: url('https://developer.mozilla.org/en-US/docs/Web/CSS/border-image/border-diamonds.png');
+    border-image-slice: 30;
+    border-image-repeat: round;
+}
+
+
+.main-info {
+    text-align: justify;
+    line-height: 1.7;
+}
+.custom-quote {
+    quotes: "«" "»";
+    color: #00ff00;
+    font-size: 22px;
+    margin: 20px 0;
+}
+.custom-quote::before {
+    content: open-quote " \26A1 "; 
+}
+.custom-quote::after {
+    content: close-quote;
+}
+
+
+.extra-info p::after {
+    content: " [" attr(data-desc) "]";
+    color: #ff00ff;
+}
+
+
+.wavy-title {
+    text-decoration: underline wavy #00ffff;
+}
+
+
+.resize-box {
+    width: 350px;
+    min-height: 70px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #000;
+    border: 1px solid #555;
+    resize: both;          
+    overflow: auto;        
+    outline: 3px solid #ffff00; 
+    cursor: text;          
+    caret-color: red;      
+}
+
+
+.grad-box {
+    width: 75%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 25px; 
+    background: radial-gradient(circle, #555, #111); 
+    border: 6px solid;
+    border-image: linear-gradient(to right, #ff0000, #0000ff) 1; 
+}
+
+footer {
+    padding: 40px;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+
+
+.wiki-links a {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wiki-links a:hover {
+    color: #ff00ff;
+    transform: translateY(-3px); 
+}
+
+.center-pic {
+    transition: transform 0.6s ease, filter 0.6s;
+}
+.center-pic:hover {
+    transform: scale(1.03) rotate(-1deg);
+    filter: contrast(1.2);
+}
+
+
+.box-2d {
+    width: 150px;
+    height: 60px;
+    background: #00ff00; 
+    color: #000;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+    transform: matrix(1, 0, 0, 1, 0, 0) scaleX(1.5); 
+    transform-origin: center;
+    transition: 0.5s;
+}
+.box-2d:hover {
+    
+    transform: scaleX(1) skewX(10deg);
+}
+
+
+.scene {
+    perspective: 800px;
+    margin: 40px 0;
+}
+.box-3d {
+    width: 200px;
+    height: 80px;
+    background: #58a6ff; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transform: matrix3d(1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1) rotateX(0deg);
+    transition: 0.8s;
+}
+.box-3d:hover {
+    
+    transform: rotateX(180deg) scale(1.1);
+}
