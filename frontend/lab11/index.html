@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 11 - Усі завдання</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="/web-labs/index.html" class="home-btn"> На головну</a>
+    <h1>Лабораторна робота №11</h1>
+
+    <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab-1" checked>
+        <label for="tab-1">Завдання 1 (Форми)</label>
+
+        <input type="radio" name="tab-btn" id="tab-2">
+        <label for="tab-2">Завдання 2 (Псевдоелементи)</label>
+
+        <input type="radio" name="tab-btn" id="tab-3">
+        <label for="tab-3">Завдання 3 (Посилання)</label>
+
+        <input type="radio" name="tab-btn" id="tab-4">
+        <label for="tab-4">Завдання 4 (Варіант 5)</label>
+
+        <div class="tab-content" id="content-1">
+            <section class="task-box">
+                <h2>Веб-форми</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Типи Input та Textarea</legend>
+                        <p><label>Login: <input type="text" placeholder="Текстове поле" required></label></p>
+                        <p><label>Email: <input type="email" placeholder="email@test.com"></label></p>
+                        <p><label>Password: <input type="password" value="secret"></label></p>
+                        <p><label>Range (0-10): <input type="range" min="0" max="10"></label></p>
+                        <p><label>Textarea:<br><textarea rows="3" cols="30"></textarea></label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Вибір (Radio, Checkbox, Select)</legend>
+                        <p>Стать: 
+                            <input type="radio" name="g" id="m" checked> <label for="m">Ч</label>
+                            <input type="radio" name="g" id="f"> <label for="f">Ж</label>
+                        </p>
+                        <p>Хобі: <input type="checkbox" checked> IT <input type="checkbox"> Спорт</p>
+                        <p><label>Браузери (optgroup):
+                            <select>
+                                <optgroup label="Web">
+                                    <option>Chrome</option>
+                                    <option>Firefox</option>
+                                </optgroup>
+                            </select>
+                        </label></p>
+                        <p><label>Множинний вибір:<br>
+                            <select multiple size="3">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>JS</option>
+                            </select>
+                        </label></p>
+                    </fieldset>
+                    <div class="btns">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Очистити форму">
+                        <input type="button" value="Click me!" onClick='alert("Oh, you have been clicked me!!!")'>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div class="tab-content" id="content-2">
+            <section class="task-box">
+                <h2>Псевдоелементи</h2>
+                <p class="pseudo-p">Перша літера та перший рядок змінені. Також тут є контент "до" та "після" цього тексту через CSS.</p>
+                <p class="pseudo-p">Другий абзац для демонстрації повторюваності стилів.</p>
+            </section>
+        </div>
+
+        <div class="tab-content" id="content-3">
+            <section class="task-box">
+                <h2>Псевдокласи посилань</h2>
+                <div class="links-list">
+                    <a href="https://google.com" target="_blank" class="test-link">Відвідане (Google)</a><br><br>
+                    <a href="https://site-never-visited.com" class="test-link">Не відвідане</a><br><br>
+                    <a href="#" class="test-link">Натисни мене (Active)</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="content-4">
+            <section class="task-box">
+                <h2>Варіант 5 та Валідація</h2>
+                <div class="v-list">
+                    <p>Перший елемент (:first-child)</p>
+                    <p>Другий елемент (:nth-of-type(2))</p>
+                    <p>Третій елемент</p>
+                </div>
+                <hr>
+                <div class="checked-demo">
+                    <input type="checkbox" id="check-test">
+                    <label for="check-test">Активувати :checked</label>
+                    <div class="box">Я реагую на чекбокс!</div>
+                </div>
+                <hr>
+                <p>Валідація (:valid / :invalid):</p>
+                <input type="text" required placeholder="Обов'язкове поле" class="valid-test">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

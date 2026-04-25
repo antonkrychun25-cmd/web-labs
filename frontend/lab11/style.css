@@ -1,0 +1,59 @@
+body { font-family: sans-serif; background: #f0f2f5; padding: 20px; }
+.home-btn { display: inline-block; padding: 8px 15px; background: #333; color: #fff; text-decoration: none; border-radius: 4px; margin-bottom: 20px; }
+
+
+.tabs { display: flex; flex-wrap: wrap; max-width: 900px; margin: 0 auto; }
+.tabs input[type="radio"] { display: none; }
+.tabs label {
+    padding: 15px 25px;
+    background: #e4e6eb;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    margin-right: 5px;
+    order: 1;
+}
+
+.tab-content {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 2;
+    display: none;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+#tab-1:checked ~ #content-1,
+#tab-2:checked ~ #content-2,
+#tab-3:checked ~ #content-3,
+#tab-4:checked ~ #content-4 { display: block; }
+
+
+#tab-1:checked + label, #tab-2:checked + label, 
+#tab-3:checked + label, #tab-4:checked + label { background: #fff; color: #3498db; }
+
+
+.task-box { min-height: 300px; }
+
+
+.pseudo-p::first-letter { font-size: 2em; color: red; font-weight: bold; }
+.pseudo-p::first-line { text-decoration: underline; }
+.pseudo-p::before { content: "➤ "; }
+.pseudo-p::after { content: " [OK]"; color: green; }
+
+
+.test-link:link { color: blue; }
+.test-link:visited { color: purple; }
+.test-link:hover { color: red; }
+.test-link:active { background: yellow; }
+
+
+.v-list p:first-child { background: #3498db; color: white; padding: 5px; }
+.v-list p:nth-of-type(2) { border-bottom: 2px dashed orange; }
+#check-test:checked ~ .box { background: lightgreen; transform: scale(1.05); }
+.box { padding: 10px; border: 1px solid #ccc; margin-top: 10px; transition: 0.3s; }
+
+.valid-test:invalid { border: 2px solid red; }
+.valid-test:valid { border: 2px solid green; }
