@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 9 - Flexbox & Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="flex-container">
+        <header class="block block-1">
+            <a href="index.html" class="home-link" data-info="Повернутися на головну">На головну</a>
+            <div class="logo-box"><img src="logo.png" alt="Logo"></div>
+            <span class="title">Світ IT-технологій</span>
+            <span class="num">1</span>
+        </header>
+
+        <div class="middle-section">
+            <div class="block block-2">
+                <p><strong>Процесор</strong></p>
+                <img src="cpu.jpg" class="flex-img">
+                <p>Центральний мозок системи.</p>
+                <span class="num">2</span>
+            </div>
+
+            <div class="block block-3">
+                <p><strong>Відеокарта</strong></p>
+                <img src="gpu.jpg" class="flex-img">
+                <p>Обробка візуальних даних.</p>
+                <span class="num">3</span>
+            </div>
+
+            <div class="block block-4">
+                <p><strong>Вузли (Scroll)</strong></p>
+                <div class="scroll-box">
+                    <p>Тут ми використовуємо функцію calc() для розрахунку висоти цього блоку. Це дозволяє точно вписати контент у рамки flex-контейнера.</p>
+                    <p>Материнська плата, оперативна пам'ять, накопичувачі та блок живлення формують єдину екосистему. Велика кількість тексту забезпечує появу смуги прокрутки.</p>
+                </div>
+                <span class="num">4</span>
+            </div>
+
+            <div class="block block-5">
+                <div class="custom-font-box">
+                    <p><strong>Майбутнє</strong></p>
+                    <img src="future.jpg" class="flex-img">
+                    <p>ШІ та нейромережі.</p>
+                </div>
+                <span class="num">5</span>
+            </div>
+        </div>
+
+        <footer class="block block-6">
+            <p>Лабораторна №9. Метод Flexbox. Варіант 5.</p>
+            <div class="calc-demo">Цей блок має ширину calc(100% - 40px)</div>
+            <span class="num">6</span>
+        </footer>
+    </div>
+
+</body>
+</html>
