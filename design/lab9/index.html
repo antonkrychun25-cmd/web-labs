@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity - SYNERGY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-green: #4A5D23;
+            --orange: #D2691E;
+            --bronze: #B87333;
+            --text-gray: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Основний контейнер макета */
+        .brand-board {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.2fr; /* Три колонки */
+            width: 1000px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        /* Загальні стилі для колонок */
+        .column {
+            padding: 40px 30px;
+            position: relative;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        /* КОЛОНКА 1: Логотипи */
+        .col-logos {
+            border-right: 1px solid #eee;
+        }
+        
+        .header-line {
+            width: 100%;
+            height: 1px;
+            background: #eee;
+            margin-bottom: 30px;
+        }
+
+        .logo-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .logo-item img {
+            max-width: 180px;
+            height: auto;
+        }
+
+        /* Палітра внизу першої колонки */
+        .color-palette {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .color-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .swatch {
+            height: 40px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .color-info {
+            font-size: 9px;
+            font-family: Arial, sans-serif;
+            line-height: 1.2;
+        }
+
+        /* КОЛОНКА 2: Опис (Темна) */
+        .col-desc {
+            background-color: var(--dark-green);
+            color: white;
+        }
+
+        .col-desc .header-line {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .desc-content {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .desc-section {
+            margin-bottom: 25px;
+        }
+
+        .label {
+            color: #C2C28A; /* Світло-оливковий для підзаголовків */
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* КОЛОНКА 3: Шрифти */
+        .col-fonts {
+            background: white;
+        }
+
+        .font-section {
+            margin-bottom: 40px;
+        }
+
+        .font-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .font-sample {
+            word-break: break-all;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .montserrat-bold {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .opensans-regular {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="brand-board">
+        
+        <div class="column col-logos">
+            <h2>Логотип і слоган:</h2>
+            <div class="header-line"></div>
+            
+            <div class="logo-stack">
+                <div class="logo-item"><img src="logo.png" alt="Logo Variant 1"></div>
+                <div class="logo-item"><img src="logo2.png" alt="Logo Variant 2"></div>
+                <div class="logo-item"><img src="logo3.png" alt="Logo Variant 3"></div>
+            </div>
+
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="swatch" style="background: #4A5D23;"></div>
+                    <div class="color-info">#4A5D23<br>RGB(74,93,35)</div>
+                </div>
+                <div class="color-item">
+                    <div class="swatch" style="background: #D2691E;"></div>
+                    <div class="color-info">#D2691E<br>RGB(210,105,30)</div>
+                </div>
+                <div class="color-item">
+                    <div class="swatch" style="background: #B87333;"></div>
+                    <div class="color-info">#B87333<br>RGB(184,115,51)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col-desc">
+            <h2>Опис:</h2>
+            <div class="header-line"></div>
+            
+            <div class="desc-content">
+                <div class="desc-section">
+                    <span class="label">Концепція:</span>
+                    Логотип "SYNERGY" побудований на принципах органічної та екологічного балансу.
+                </div>
+                <div class="desc-section">
+                    <span class="label">Скритий сенс:</span>
+                    переплетених форм, технологій. Ламані лінії вказують на динаміку та розвиток.
+                </div>
+                <div class="desc-section">
+                    <span class="label">Кольори:</span>
+                    Використано палітру "Natural Earth", синю аналогову палітру. Темно-синій втілює надійність, а світлий — відкритість до інновацій.
+                </div>
+            </div>
+        </div>
+
+        <div class="column col-fonts">
+            <h2>Шрифти:</h2>
+            <div class="header-line"></div>
+
+            <div class="font-section">
+                <div class="font-label">Заголовки: Montserrat Bold</div>
+                <div class="font-sample montserrat-bold">
+                    abcdefghijklmnopqrstuvwxyz<br>
+                    ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                    абвгґдеєжзиіїйклмнопрстуфхцчшщьюя<br>
+                    АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ<br>
+                    1234567890
+                </div>
+            </div>
+
+            <div class="font-section">
+                <div class="font-label">Основний текст: Open Sans Regular</div>
+                <div class="font-sample opensans-regular">
+                    abcdefghijklmnopqrstuvwxyz<br>
+                    ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                    абвгґдеєжзиіїйклмнопрстуфхцчшщьюя<br>
+                    АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ<br>
+                    1234567890
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
